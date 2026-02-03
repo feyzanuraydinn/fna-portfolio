@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --dark: oklch(0.1879 0.0016 17.3);
+  --light: oklch(0.9992 0.0011 197.14);
+  --neutral: oklch(55.6% 0 0);
+  --primary: oklch(0.795 0.184 86.047);
+  --secondary: oklch(0.421 0.095 57.708);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-dark: var(--dark);
+  --color-light: var(--light);
+  --color-neutral: var(--neutral);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant in2xl (@media (max-width: 1536px));
+@custom-variant inxl (@media (max-width: 1280px));
+@custom-variant inlg (@media (max-width: 1024px));
+@custom-variant inmd (@media (max-width: 768px));
+@custom-variant insm (@media (max-width: 640px));
+@custom-variant inxs (@media (max-width: 333px));
+
+@utility outline-custom {
+  @apply outline-offset-4 dark:outline-offset-0 outline-primary;
+}
+
+@utility transition-theme {
+  @apply transition-colors duration-666;
+}
+
+@utility shadow-custom {
+  @apply shadow-[0_0_12px] shadow-transparent hover:shadow-primary focus-visible:shadow-primary;
+}
+
+@utility drop-shadow-custom {
+  @apply drop-shadow-[0_0_6px] drop-shadow-primary;
+}
+
+@utility animate-halo {
+  @apply overflow-hidden relative;
+  @apply after:pointer-events-none after:[transform:translateZ(0)];
+  @apply after:-z-10 after:absolute after:top-1/2 after:left-1/2 after:-translate-1/2;
+  @apply after:w-[333px] after:h-[333px] after:rounded-full;
+  @apply dark:after:bg-light after:bg-dark;
+  @apply after:transition-all after:duration-666;
+  @apply hover:after:shadow-[inset_0_0_0_175px] hover:after:shadow-primary;
+  @apply active:after:shadow-[inset_0_0_0_175px] active:after:shadow-secondary;
+}
+
+@utility animate-shine {
+  @apply overflow-hidden relative;
+  @apply after:absolute after:inset-0 after:-translate-x-full;
+  @apply after:bg-gradient-to-r after:from-transparent after:via-white/50 after:to-transparent;
+  @apply after:transition-transform after:duration-666;
+  @apply hover:after:translate-x-full focus-visible:after:translate-x-full;
+}
+
+@utility animate-expand {
+  @apply relative;
+  @apply after:-z-10 after:scale-0 after:origin-center;
+  @apply after:absolute after:inset-0 after:rounded-full;
+  @apply after:transition-all after:duration-333;
+  @apply hover:after:scale-100 hover:after:bg-primary;
+  @apply focus-visible:after:scale-100 focus-visible:after:bg-primary;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+button {
+  @apply select-none;
+}
+
+body {
+  @apply select-none;
+}
+
+input,
+textarea,
+[contenteditable="true"] {
+  @apply select-text;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+.light ::-webkit-scrollbar-track {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+.dark {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--dark);
+}
+
+.light {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--light);
+}

@@ -1,0 +1,49 @@
+{
+  "id": "your-project-slug",
+  "slug": "your-project-slug",
+  "preview": "your-project-slug.webp",
+  "technologies": ["Tech1", "Tech2", "Tech3"],
+  "liveUrl": "https://example.com",
+  "isMobile": false,
+  "featured": false,
+  "content": {
+    "name": {
+      "tr": "Proje Adı",
+      "en": "Project Name"
+    },
+    "subtitle": {
+      "tr": "Detay sayfasındaki bir cümlelik alt başlık",
+      "en": "One-line subtitle on the detail page"
+    },
+    "cardDescription": {
+      "tr": "Anasayfa kartında ve liste görünümünde gösterilen kısa açıklama (1-2 cümle).",
+      "en": "Short description shown on the home card and project list (1-2 sentences)."
+    },
+    "description": {
+      "tr": "Detay sayfasında gösterilen uzun açıklama. Projenin amacını, kullanılan teknolojileri ve katma değeri özetler.",
+      "en": "Long description shown on the detail page. Summarises the project goal, tech stack and value delivered."
+    },
+    "cardAlt": {
+      "tr": "Kart görseli için alt metni",
+      "en": "Alt text for the card image"
+    },
+    "heroAlt": {
+      "tr": "Detay sayfasındaki hero görseli için alt metni",
+      "en": "Alt text for the detail page hero image"
+    },
+    "status": {
+      "tr": "Yayında",
+      "en": "Released"
+    },
+    "roles": [
+      {
+        "icon": "code",
+        "title": { "tr": "Rol Başlığı", "en": "Role Title" },
+        "desc": {
+          "tr": "Edilgen yapıda yapılan işin açıklaması — örn. 'Next.js ile baştan sona geliştirildi'.",
+          "en": "Passive-voice description of what was done — e.g. 'Built end-to-end with Next.js'."
+        }
+      }
+    ]
+  }
+}

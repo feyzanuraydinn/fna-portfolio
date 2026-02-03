@@ -1,0 +1,120 @@
+{
+  "backToTop": "Başa dön",
+  "header": {
+    "navAriaLabel": "Ana site navigasyonu",
+    "links": {
+      "profile": "Profil",
+      "home": "Ana Sayfa",
+      "projects": "Projeler",
+      "tools": "Araçlar",
+      "contact": "İletişim"
+    }
+  },
+  "aside": {
+    "buttons": {
+      "language": {
+        "label": "Dil"
+      },
+      "theme": {
+        "label": "Tema"
+      }
+    },
+    "dropdowns": {
+      "theme": {
+        "dark": "Koyu",
+        "light": "Açık",
+        "auto": "Otomatik"
+      }
+    }
+  },
+  "profile": {
+    "photo": { "alt": "Feyza" },
+    "name": "Feyza Nur Aydın",
+    "description": "Full Stack Developer",
+    "location": "Türkiye",
+    "socials": {
+      "linkedin": "LinkedIn'i yeni sekmede aç",
+      "github": "GitHub'ı yeni sekmede aç",
+      "email": "E-posta gönder"
+    },
+    "button": "İletişime Geç"
+  },
+  "home": {
+    "title": "BASİTTEN",
+    "strong": "DEĞERLİYE",
+    "description": "Modern teknolojiler kullanarak kullanıcı dostu ve yüksek performanslı web uygulamaları oluşturuyorum.",
+    "numbers": {
+      "years": "YIL DENEYİM",
+      "projects": "TAMAMLANAN PROJE",
+      "technologies": "KULLANILAN TEKNOLOJİ"
+    },
+    "buttons": {
+      "contact": "İletişime Geç",
+      "work": "Çalışmalarım"
+    }
+  },
+  "work": {
+    "title": "ÖNE ÇIKAN",
+    "strong": "PROJELER",
+    "allTitle": "TÜM",
+    "allStrong": "PROJELER",
+    "viewAll": "Tüm Projeleri Gör"
+  },
+  "tools": {
+    "title": "TEMEL",
+    "strong": "ARAÇLAR",
+    "items": {
+      "react": { "name": "React", "description": "JavaScript kütüphanesi" },
+      "nextjs": { "name": "Next.js", "description": "React framework" },
+      "typescript": { "name": "TypeScript", "description": "Programlama dili" },
+      "tailwind": { "name": "Tailwind CSS", "description": "CSS framework" },
+      "nodejs": { "name": "Node.js", "description": "Çalışma ortamı" },
+      "express": { "name": "Express", "description": "Web framework" },
+      "electron": { "name": "Electron", "description": "Masaüstü framework" },
+      "postgresql": { "name": "PostgreSQL", "description": "SQL veritabanı" },
+      "mongodb": { "name": "MongoDB", "description": "NoSQL veritabanı" },
+      "prisma": { "name": "Prisma", "description": "ORM" },
+      "zod": { "name": "Zod", "description": "Şema doğrulama" },
+      "vitest": { "name": "Vitest", "description": "Test runner" },
+      "git": { "name": "Git", "description": "Versiyon kontrol" },
+      "vercel": { "name": "Vercel", "description": "Deploy platformu" }
+    }
+  },
+  "contact": {
+    "title": "BİRLİKTE",
+    "strong": "ÇALIŞALIM",
+    "form": {
+      "legend": "İletişim",
+      "name": { "label": "İsim", "placeholder": "Adınız" },
+      "email": { "label": "E-posta", "placeholder": "email@adresiniz.com" },
+      "message": { "label": "Mesaj", "placeholder": "Mesajınız" },
+      "button": { "text": "Gönder" }
+    }
+  },
+  "footer": {
+    "author": { "text": "Yapan", "name": "Feyza" },
+    "tech": { "text": "Altyapı", "name": "Next.js" },
+    "rightsReserved": "Tüm hakları saklıdır."
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Sayfa Bulunamadı",
+    "description": "Aradığın sayfa taşınmış veya hiç var olmamış olabilir. Ana sayfaya dönüp tekrar deneyebilirsin.",
+    "homeButton": "Ana Sayfaya Dön"
+  },
+  "errorPage": {
+    "code": "Hata",
+    "title": "Bir Şeyler Ters Gitti",
+    "description": "Beklenmedik bir hata oluştu. Sayfayı yenileyebilir veya ana sayfaya dönebilirsin.",
+    "retryButton": "Tekrar Dene",
+    "homeButton": "Ana Sayfaya Dön"
+  },
+  "projects": {
+    "goHome": "Ana Sayfaya Dön",
+    "goProjects": "Projelere Dön",
+    "viewLive": "Canlı Görüntüle",
+    "navAriaLabel": "Proje bağlantıları navigasyonu",
+    "rolesAriaLabel": "Proje özellikleri ve sorumluluklar",
+    "screenshotsAriaLabel": "Proje ekran görüntüleri galerisi"
+  }
+}

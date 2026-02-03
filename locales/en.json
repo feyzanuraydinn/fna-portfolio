@@ -1,0 +1,120 @@
+{
+  "backToTop": "Back to top",
+  "header": {
+    "navAriaLabel": "Main site navigation",
+    "links": {
+      "profile": "About",
+      "home": "Home",
+      "projects": "Projects",
+      "tools": "Tools",
+      "contact": "Contact"
+    }
+  },
+  "aside": {
+    "buttons": {
+      "language": {
+        "label": "Language"
+      },
+      "theme": {
+        "label": "Theme"
+      }
+    },
+    "dropdowns": {
+      "theme": {
+        "dark": "Dark",
+        "light": "Light",
+        "auto": "Auto"
+      }
+    }
+  },
+  "profile": {
+    "photo": { "alt": "Feyza" },
+    "name": "Feyza Nur Aydın",
+    "description": "Full Stack Developer",
+    "location": "Turkey",
+    "socials": {
+      "linkedin": "Open LinkedIn in a new tab",
+      "github": "Open GitHub in a new tab",
+      "email": "Send email"
+    },
+    "button": "Let's Talk"
+  },
+  "home": {
+    "title": "FROM SIMPLE TO",
+    "strong": "VALUABLE",
+    "description": "Creating user-friendly and high performant web applications using modern technologies.",
+    "numbers": {
+      "years": "YEARS OF EXPERIENCE",
+      "projects": "COMPLETED PROJECTS",
+      "technologies": "TECHNOLOGIES USED"
+    },
+    "buttons": {
+      "contact": "Let's Talk",
+      "work": "My work"
+    }
+  },
+  "work": {
+    "title": "FEATURED",
+    "strong": "PROJECTS",
+    "allTitle": "ALL",
+    "allStrong": "PROJECTS",
+    "viewAll": "View All Projects"
+  },
+  "tools": {
+    "title": "MAIN",
+    "strong": "TOOLS",
+    "items": {
+      "react": { "name": "React", "description": "JavaScript library" },
+      "nextjs": { "name": "Next.js", "description": "React framework" },
+      "typescript": { "name": "TypeScript", "description": "Programming language" },
+      "tailwind": { "name": "Tailwind CSS", "description": "CSS framework" },
+      "nodejs": { "name": "Node.js", "description": "Runtime environment" },
+      "express": { "name": "Express", "description": "Web framework" },
+      "electron": { "name": "Electron", "description": "Desktop framework" },
+      "postgresql": { "name": "PostgreSQL", "description": "SQL database" },
+      "mongodb": { "name": "MongoDB", "description": "NoSQL database" },
+      "prisma": { "name": "Prisma", "description": "ORM" },
+      "zod": { "name": "Zod", "description": "Schema validation" },
+      "vitest": { "name": "Vitest", "description": "Test runner" },
+      "git": { "name": "Git", "description": "Version control" },
+      "vercel": { "name": "Vercel", "description": "Deployment platform" }
+    }
+  },
+  "contact": {
+    "title": "LET'S WORK",
+    "strong": "TOGETHER",
+    "form": {
+      "legend": "Contact",
+      "name": { "label": "Name", "placeholder": "Your name" },
+      "email": { "label": "Email", "placeholder": "your@email.com" },
+      "message": { "label": "Message", "placeholder": "Your message" },
+      "button": { "text": "Send" }
+    }
+  },
+  "footer": {
+    "author": { "text": "Made by", "name": "Feyza" },
+    "tech": { "text": "Powered by", "name": "Next.js" },
+    "rightsReserved": "All rights reserved."
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page Not Found",
+    "description": "The page you're looking for might have been moved or never existed. Try heading back to the home page.",
+    "homeButton": "Back to Home"
+  },
+  "errorPage": {
+    "code": "Error",
+    "title": "Something Went Wrong",
+    "description": "An unexpected error occurred. Try refreshing the page or returning home.",
+    "retryButton": "Try Again",
+    "homeButton": "Back to Home"
+  },
+  "projects": {
+    "goHome": "Back to Home",
+    "goProjects": "Back to Projects",
+    "viewLive": "View Live",
+    "navAriaLabel": "Project links navigation",
+    "rolesAriaLabel": "Project features and responsibilities",
+    "screenshotsAriaLabel": "Project screenshots gallery"
+  }
+}
