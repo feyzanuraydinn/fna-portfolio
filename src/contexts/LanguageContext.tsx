@@ -33,17 +33,23 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("tr");
 
   useEffect(() => {
-    // One-time hydration from localStorage on mount; SSR-safe pattern.
+    // One-time hydration on mount; SSR-safe pattern.
+    // Priority: stored preference → browser language → default ("tr").
     try {
       const stored = localStorage.getItem("locale");
       if (stored === "en" || stored === "tr") {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setLocaleState(stored);
         document.documentElement.lang = stored;
+        return;
       }
     } catch {
       /* localStorage unavailable */
     }
+    const browserLang = navigator.language?.toLowerCase() ?? "";
+    const inferred: Locale = browserLang.startsWith("tr") ? "tr" : "en";
+    setLocaleState(inferred);
+    document.documentElement.lang = inferred;
   }, []);
 
   const setLocale = useCallback((newLocale: Locale) => {

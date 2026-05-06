@@ -18,7 +18,7 @@ export const profile: Profile = {
   photoUrl: "/images/me.png",
   name: "Feyza Nur Aydın",
   description: {
-    tr: "Full Stack Geliştirici",
+    tr: "Full Stack Developer",
     en: "Full Stack Developer",
   },
   location: {
