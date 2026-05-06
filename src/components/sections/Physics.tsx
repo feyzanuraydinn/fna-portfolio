@@ -41,6 +41,15 @@ export function Physics() {
     const container = document.getElementById("physics-container");
     if (!container) return;
 
+    // Warm caches before the section enters the viewport — matter-js gets
+    // loaded into the module cache and each SVG into the browser image
+    // cache, so initPhysics() runs without a visible network wait.
+    void import("matter-js");
+    physicsObjects.forEach((obj) => {
+      const img = new window.Image();
+      img.src = obj.imageUrl;
+    });
+
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting && !hasInitialized.current) {
