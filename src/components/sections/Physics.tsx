@@ -256,17 +256,26 @@ export function Physics() {
           const mouseConstraint = MouseConstraint.create(engineRef.current!, {
             mouse: mouse,
             constraint: {
-              stiffness: 0.8,
-              damping: 0.05,
+              stiffness: 0.1,
+              damping: 0.1,
               render: { visible: false },
             },
           });
 
           if (mouseConstraint.constraint) {
-            const c = mouseConstraint.constraint as { angleA?: number; angleB?: number; length?: number };
+            const c = mouseConstraint.constraint as {
+              angleA?: number;
+              angleB?: number;
+              length?: number;
+              angularStiffness?: number;
+            };
             c.angleA = 0;
             c.angleB = 0;
             c.length = 0;
+            // angularStiffness=0 lets gravity create torque around the grab
+            // point, so dragged objects tilt naturally. The Matter.js types
+            // are missing this prop, hence the cast above.
+            c.angularStiffness = 0;
           }
 
           // Allow page scroll — remove Matter.js wheel capture
